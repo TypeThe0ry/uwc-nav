@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UWC Nav</title>
+<meta name="description" content="A minimalist start page — tools, school, links and games."/>
+<link rel="stylesheet" href="styles.css"/>
+<script>
+try{const saved=localStorage.getItem("owu-theme");const theme=saved==="light"||saved==="dark"?saved:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=theme}catch{}
+</script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<main class="nav-shell">
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="ambient ambient-three" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="wordmark" aria-label="UWC Nav">
+      <span class="wordmark-icon" aria-hidden="true"><i></i></span>
+      <span class="wordmark-copy">
+        <strong>UWC Nav</strong>
+        <small>Quick links</small>
+      </span>
+    </div>
+
+    <div class="topbar-actions">
+      <a class="gh-link" href="https://github.com/TypeThe0ry/uwc-nav" target="_blank" rel="noopener noreferrer" aria-label="UWC Nav GitHub repository">
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        <span>GitHub</span>
+      </a>
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Toggle color theme">
+        <span class="theme-track" aria-hidden="true">
+          <span class="theme-thumb">
+            <span class="theme-icon-light">☀</span>
+            <span class="theme-icon-dark">☾</span>
+          </span>
+        </span>
+        <span class="theme-label" aria-hidden="true">
+          <span class="theme-label-light">Light</span>
+          <span class="theme-label-dark">Dark</span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <section class="categories" aria-label="Quick links">
+    <div class="category">
+      <h2 class="category-title"><span class="category-dot tools"></span>Tools</h2>
+      <ul class="link-list">
+        <li><a href="https://owu.terracat.net/" target="_blank" rel="noopener noreferrer">OWU <span class="link-hint">web proxy</span></a></li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2 class="category-title"><span class="category-dot school"></span>School</h2>
+      <ul class="link-list">
+        <li><a href="https://www.uwcsea.edu.sg/community-portal" target="_blank" rel="noopener noreferrer">Community Portal <span class="link-hint">UWCSEA</span></a></li>
+        <li><a href="https://classroom.google.com" target="_blank" rel="noopener noreferrer">Google Classroom <span class="link-hint">classes</span></a></li>
+        <li><a href="https://mail.google.com" target="_blank" rel="noopener noreferrer">Gmail <span class="link-hint">mail</span></a></li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2 class="category-title"><span class="category-dot external"></span>External</h2>
+      <ul class="link-list">
+        <li><a href="https://zwwx.club" target="_blank" rel="noopener noreferrer">zwwx.club <span class="link-hint">community</span></a></li>
+        <li><a href="https://yutianfu.me" target="_blank" rel="noopener noreferrer">yutianfu.me <span class="link-hint">profile</span></a></li>
+        <li><a href="https://zaiwu.org" target="_blank" rel="noopener noreferrer">zaiwu.org <span class="link-hint">site</span></a></li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2 class="category-title"><span class="category-dot games"></span>Games</h2>
+      <ul class="link-list">
+        <li><a href="https://game.yutianfu.me/" target="_blank" rel="noopener noreferrer">game.yutianfu.me <span class="link-hint">arcade</span></a></li>
+        <li><a href="https://ddz.yutianfu.me/" target="_blank" rel="noopener noreferrer">ddz.yutianfu.me <span class="link-hint">doudizhu</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <span>UWC Nav</span>
+    <span>Simple by design.</span>
+  </footer>
+</main>
+</body>
+</html>
