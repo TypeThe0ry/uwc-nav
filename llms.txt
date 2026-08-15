@@ -1,0 +1,53 @@
+# UWC Nav
+
+> UWC Nav is a clean, minimalist start page for UWCSEA students. It collects shortcuts to AI tools, AI humanizers, school portals, study and reference resources, search engines, social media, and games. Social and game links (except the two yutianfu.me sites) open through the OWU proxy at https://owu.terracat.net/ to work around the school firewall.
+
+## Categories
+
+### AI Tools
+- [ChatGPT](https://chatgpt.com): OpenAI assistant
+- [Claude](https://claude.ai): Anthropic assistant
+- [Gemini](https://gemini.google.com): Google assistant
+- [Perplexity](https://perplexity.ai): answer engine
+- [DeepSeek](https://chat.deepseek.com): open assistant
+- [Copilot](https://copilot.microsoft.com): Microsoft assistant
+- [Grok](https://grok.com): xAI assistant
+- [Cursor](https://cursor.com): AI code editor
+
+### AI Humanizer
+- [Undetectable AI](https://undetectable.ai)
+- [WriteHuman](https://writehuman.ai)
+- [StealthGPT](https://stealthgpt.ai)
+- [Humanize AI](https://humanizeai.pro)
+- [Netus AI](https://netus.ai)
+
+### School
+- [UWCSEA Community Portal](https://www.uwcsea.edu.sg/community-portal)
+- [Google Classroom](https://classroom.google.com)
+- [Gmail](https://mail.google.com)
+- [Google Drive](https://drive.google.com)
+- [Google Calendar](https://calendar.google.com)
+- [Google Docs](https://docs.google.com)
+
+### Study & Reference
+- [Wikipedia](https://www.wikipedia.org), [Google Scholar](https://scholar.google.com), [Khan Academy](https://www.khanacademy.org), [Quizlet](https://quizlet.com), [Grammarly](https://www.grammarly.com), [DeepL](https://www.deepl.com), [WolframAlpha](https://www.wolframalpha.com), [Desmos](https://www.desmos.com), [Notion](https://www.notion.so), [Canva](https://www.canva.com)
+
+### Search
+- [Google](https://www.google.com), [DuckDuckGo](https://duckduckgo.com), [Bing](https://www.bing.com), [Yandex](https://yandex.com), [Brave](https://search.brave.com)
+
+### Social & Media (via OWU proxy except YouTube)
+- [YouTube](https://www.youtube.com) (direct)
+- [Instagram](https://owu.terracat.net/browse/aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbQ/), [TikTok](https://owu.terracat.net/browse/aHR0cHM6Ly93d3cudGlrdG9rLmNvbQ/), [Discord](https://owu.terracat.net/browse/aHR0cHM6Ly9kaXNjb3JkLmNvbQ/), [Reddit](https://owu.terracat.net/browse/aHR0cHM6Ly93d3cucmVkZGl0LmNvbQ/), [X](https://owu.terracat.net/browse/aHR0cHM6Ly94LmNvbQ/), [Spotify](https://owu.terracat.net/browse/aHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29t/)
+
+### Games (via OWU proxy except the yutianfu.me sites)
+- Direct: [game.yutianfu.me](https://game.yutianfu.me/), [ddz.yutianfu.me](https://ddz.yutianfu.me/)
+- Via OWU: [Poki](https://owu.terracat.net/browse/aHR0cHM6Ly9wb2tpLmNvbQ/), [CrazyGames](https://owu.terracat.net/browse/aHR0cHM6Ly93d3cuY3JhenlnYW1lcy5jb20/), [Y8](https://owu.terracat.net/browse/aHR0cHM6Ly93d3cueTguY29t/), [Friv](https://owu.terracat.net/browse/aHR0cHM6Ly93d3cuZnJpdi5jb20/), [4399](https://owu.terracat.net/browse/aHR0cHM6Ly93d3cuNDM5OS5jb20/), [itch.io](https://owu.terracat.net/browse/aHR0cHM6Ly9pdGNoLmlv/), [now.gg](https://owu.terracat.net/browse/aHR0cHM6Ly9ub3cuZ2c/), [Roblox](https://owu.terracat.net/browse/aHR0cHM6Ly93d3cucm9ibG94LmNvbQ/), [GeForce NOW](https://owu.terracat.net/browse/aHR0cHM6Ly9wbGF5LmdlZm9yY2Vub3cuY29t/)
+
+### Other Tools
+- [zwwx.club](https://zwwx.club), [zaiwu.org](https://zaiwu.org), [GitHub](https://github.com), [Figma](https://www.figma.com)
+
+## About
+- Name: UWC Nav
+- Audience: UWCSEA students
+- Built by: Team TerraCat
+- Source: https://github.com/TypeThe0ry/uwc-nav
