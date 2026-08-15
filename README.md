@@ -1,10 +1,10 @@
 # UWC Nav
 
-A clean, minimalist start page for UWCSEA students.
+A modern, minimal start page for UWCSEA students — same repo spirit as OWU, independent style.
 
-- 8 categories: AI Tools, AI Humanizer, School, Study & Reference, Search,
-  Social & Media, Games, Other Tools — 55+ shortcuts
-- Instant link filter (type to find a site), light/dark themes
+- **Pinned:** OWU — Website Unblocker featured on top
+- **8 categories, 55+ shortcuts** with favicon tiles (letter fallback when a site has no icon)
+- Instant link filter, light/dark themes
 - Plain HTML/CSS/JS, zero build step; deployed at https://uwc.tools
 
 Made By Team TerraCat

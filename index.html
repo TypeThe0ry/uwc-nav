@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>UWC Nav</title>
 <meta name="description" content="A clean start page for UWCSEA students — AI, school, study, games and more."/>
-<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="styles.css?v=2"/>
 <script>
 try{const saved=localStorage.getItem("owu-theme");const theme=saved==="light"||saved==="dark"?saved:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=theme}catch{}
 </script>
-<script src="app.js" defer></script>
+<script src="app.js?v=2" defer></script>
 </head>
 <body>
 <div class="page">
@@ -33,106 +33,118 @@ try{const saved=localStorage.getItem("owu-theme");const theme=saved==="light"||s
     </div>
   </header>
 
-  <main class="categories">
-    <section class="category" data-category="AI Tools">
-      <h2 class="category-title">AI Tools</h2>
-      <ul class="link-list">
-        <li><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">ChatGPT</a></li>
-        <li><a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a></li>
-        <li><a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">Gemini</a></li>
-        <li><a href="https://perplexity.ai" target="_blank" rel="noopener noreferrer">Perplexity</a></li>
-        <li><a href="https://chat.deepseek.com" target="_blank" rel="noopener noreferrer">DeepSeek</a></li>
-        <li><a href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer">Copilot</a></li>
-        <li><a href="https://grok.com" target="_blank" rel="noopener noreferrer">Grok</a></li>
-        <li><a href="https://cursor.com" target="_blank" rel="noopener noreferrer">Cursor</a></li>
-      </ul>
+  <main>
+    <section class="pinned" aria-label="Featured">
+      <a class="pinned-card" href="https://owu.terracat.net/" target="_blank" rel="noopener noreferrer">
+        <span class="pinned-icon"><img src="https://owu.terracat.net/favicon-32.png" alt="" onerror="this.closest('.pinned-icon').classList.add('fallback')"/></span>
+        <span class="pinned-copy">
+          <span class="pinned-title">OWU</span>
+          <span class="pinned-sub">Website Unblocker</span>
+        </span>
+        <span class="pinned-arrow" aria-hidden="true">→</span>
+      </a>
     </section>
 
-    <section class="category" data-category="AI Humanizer">
-      <h2 class="category-title">AI Humanizer</h2>
-      <ul class="link-list">
-        <li><a href="https://undetectable.ai" target="_blank" rel="noopener noreferrer">Undetectable AI</a></li>
-        <li><a href="https://writehuman.ai" target="_blank" rel="noopener noreferrer">WriteHuman</a></li>
-        <li><a href="https://stealthgpt.ai" target="_blank" rel="noopener noreferrer">StealthGPT</a></li>
-        <li><a href="https://humanizeai.pro" target="_blank" rel="noopener noreferrer">Humanize AI</a></li>
-        <li><a href="https://netus.ai" target="_blank" rel="noopener noreferrer">Netus AI</a></li>
-      </ul>
-    </section>
+    <section class="categories">
+      <div class="category" data-category="AI Tools">
+        <h2 class="category-title">AI Tools</h2>
+        <ul class="tile-list">
+          <li class="tile"><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">ChatGPT</span></a></li>
+          <li class="tile"><a href="https://claude.ai" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Claude</span></a></li>
+          <li class="tile"><a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Gemini</span></a></li>
+          <li class="tile"><a href="https://perplexity.ai" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=perplexity.ai&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Perplexity</span></a></li>
+          <li class="tile"><a href="https://chat.deepseek.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">DeepSeek</span></a></li>
+          <li class="tile"><a href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=copilot.microsoft.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Copilot</span></a></li>
+          <li class="tile"><a href="https://grok.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=grok.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Grok</span></a></li>
+          <li class="tile"><a href="https://cursor.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=cursor.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Cursor</span></a></li>
+        </ul>
+      </div>
 
-    <section class="category" data-category="School">
-      <h2 class="category-title">School</h2>
-      <ul class="link-list">
-        <li><a href="https://www.uwcsea.edu.sg/community-portal" target="_blank" rel="noopener noreferrer">Community Portal</a></li>
-        <li><a href="https://classroom.google.com" target="_blank" rel="noopener noreferrer">Google Classroom</a></li>
-        <li><a href="https://mail.google.com" target="_blank" rel="noopener noreferrer">Gmail</a></li>
-        <li><a href="https://drive.google.com" target="_blank" rel="noopener noreferrer">Google Drive</a></li>
-        <li><a href="https://calendar.google.com" target="_blank" rel="noopener noreferrer">Google Calendar</a></li>
-        <li><a href="https://docs.google.com" target="_blank" rel="noopener noreferrer">Google Docs</a></li>
-        <li><a href="https://managebac.com" target="_blank" rel="noopener noreferrer">ManageBac</a></li>
-      </ul>
-    </section>
+      <div class="category" data-category="AI Humanizer">
+        <h2 class="category-title">AI Humanizer</h2>
+        <ul class="tile-list">
+          <li class="tile"><a href="https://undetectable.ai" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=undetectable.ai&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Undetectable</span></a></li>
+          <li class="tile"><a href="https://writehuman.ai" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=writehuman.ai&sz=64" alt="" loading="lazy"/></span><span class="tile-name">WriteHuman</span></a></li>
+          <li class="tile"><a href="https://stealthgpt.ai" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=stealthgpt.ai&sz=64" alt="" loading="lazy"/></span><span class="tile-name">StealthGPT</span></a></li>
+          <li class="tile"><a href="https://humanizeai.pro" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=humanizeai.pro&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Humanize AI</span></a></li>
+          <li class="tile"><a href="https://netus.ai" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=netus.ai&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Netus AI</span></a></li>
+        </ul>
+      </div>
 
-    <section class="category" data-category="Study & Reference">
-      <h2 class="category-title">Study &amp; Reference</h2>
-      <ul class="link-list">
-        <li><a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
-        <li><a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
-        <li><a href="https://www.khanacademy.org" target="_blank" rel="noopener noreferrer">Khan Academy</a></li>
-        <li><a href="https://quizlet.com" target="_blank" rel="noopener noreferrer">Quizlet</a></li>
-        <li><a href="https://www.grammarly.com" target="_blank" rel="noopener noreferrer">Grammarly</a></li>
-        <li><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer">DeepL</a></li>
-        <li><a href="https://www.wolframalpha.com" target="_blank" rel="noopener noreferrer">WolframAlpha</a></li>
-        <li><a href="https://www.desmos.com" target="_blank" rel="noopener noreferrer">Desmos</a></li>
-        <li><a href="https://www.notion.so" target="_blank" rel="noopener noreferrer">Notion</a></li>
-        <li><a href="https://www.canva.com" target="_blank" rel="noopener noreferrer">Canva</a></li>
-      </ul>
-    </section>
+      <div class="category" data-category="School">
+        <h2 class="category-title">School</h2>
+        <ul class="tile-list">
+          <li class="tile"><a href="https://www.uwcsea.edu.sg/community-portal" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=uwcsea.edu.sg&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Community Portal</span></a></li>
+          <li class="tile"><a href="https://classroom.google.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=classroom.google.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Classroom</span></a></li>
+          <li class="tile"><a href="https://mail.google.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=mail.google.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Gmail</span></a></li>
+          <li class="tile"><a href="https://drive.google.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=drive.google.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Drive</span></a></li>
+          <li class="tile"><a href="https://calendar.google.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=calendar.google.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Calendar</span></a></li>
+          <li class="tile"><a href="https://docs.google.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=docs.google.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Docs</span></a></li>
+          <li class="tile"><a href="https://managebac.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=managebac.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">ManageBac</span></a></li>
+        </ul>
+      </div>
 
-    <section class="category" data-category="Search">
-      <h2 class="category-title">Search</h2>
-      <ul class="link-list">
-        <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
-        <li><a href="https://duckduckgo.com" target="_blank" rel="noopener noreferrer">DuckDuckGo</a></li>
-        <li><a href="https://www.bing.com" target="_blank" rel="noopener noreferrer">Bing</a></li>
-        <li><a href="https://yandex.com" target="_blank" rel="noopener noreferrer">Yandex</a></li>
-        <li><a href="https://search.brave.com" target="_blank" rel="noopener noreferrer">Brave</a></li>
-      </ul>
-    </section>
+      <div class="category" data-category="Study & Reference">
+        <h2 class="category-title">Study &amp; Reference</h2>
+        <ul class="tile-list">
+          <li class="tile"><a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=wikipedia.org&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Wikipedia</span></a></li>
+          <li class="tile"><a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Scholar</span></a></li>
+          <li class="tile"><a href="https://www.khanacademy.org" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=khanacademy.org&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Khan Academy</span></a></li>
+          <li class="tile"><a href="https://quizlet.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=quizlet.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Quizlet</span></a></li>
+          <li class="tile"><a href="https://www.grammarly.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=grammarly.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Grammarly</span></a></li>
+          <li class="tile"><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=deepl.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">DeepL</span></a></li>
+          <li class="tile"><a href="https://www.wolframalpha.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=wolframalpha.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">WolframAlpha</span></a></li>
+          <li class="tile"><a href="https://www.desmos.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=desmos.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Desmos</span></a></li>
+          <li class="tile"><a href="https://www.notion.so" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=notion.so&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Notion</span></a></li>
+          <li class="tile"><a href="https://www.canva.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=canva.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Canva</span></a></li>
+        </ul>
+      </div>
 
-    <section class="category" data-category="Social & Media">
-      <h2 class="category-title">Social &amp; Media</h2>
-      <ul class="link-list">
-        <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-        <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a></li>
-        <li><a href="https://discord.com" target="_blank" rel="noopener noreferrer">Discord</a></li>
-        <li><a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer">Reddit</a></li>
-        <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a></li>
-        <li><a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a></li>
-      </ul>
-    </section>
+      <div class="category" data-category="Search">
+        <h2 class="category-title">Search</h2>
+        <ul class="tile-list">
+          <li class="tile"><a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=google.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Google</span></a></li>
+          <li class="tile"><a href="https://duckduckgo.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=duckduckgo.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">DuckDuckGo</span></a></li>
+          <li class="tile"><a href="https://www.bing.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=bing.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Bing</span></a></li>
+          <li class="tile"><a href="https://yandex.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=yandex.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Yandex</span></a></li>
+          <li class="tile"><a href="https://search.brave.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=search.brave.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Brave</span></a></li>
+        </ul>
+      </div>
 
-    <section class="category" data-category="Games">
-      <h2 class="category-title">Games</h2>
-      <ul class="link-list">
-        <li><a href="https://game.yutianfu.me/" target="_blank" rel="noopener noreferrer">game.yutianfu.me</a></li>
-        <li><a href="https://ddz.yutianfu.me/" target="_blank" rel="noopener noreferrer">ddz.yutianfu.me</a></li>
-        <li><a href="https://poki.com" target="_blank" rel="noopener noreferrer">Poki</a></li>
-        <li><a href="https://www.roblox.com" target="_blank" rel="noopener noreferrer">Roblox</a></li>
-        <li><a href="https://play.geforcenow.com" target="_blank" rel="noopener noreferrer">GeForce NOW</a></li>
-      </ul>
-    </section>
+      <div class="category" data-category="Social & Media">
+        <h2 class="category-title">Social &amp; Media</h2>
+        <ul class="tile-list">
+          <li class="tile"><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=youtube.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">YouTube</span></a></li>
+          <li class="tile"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=instagram.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Instagram</span></a></li>
+          <li class="tile"><a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=tiktok.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">TikTok</span></a></li>
+          <li class="tile"><a href="https://discord.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=discord.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Discord</span></a></li>
+          <li class="tile"><a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=reddit.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Reddit</span></a></li>
+          <li class="tile"><a href="https://x.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=x.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">X</span></a></li>
+          <li class="tile"><a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=open.spotify.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Spotify</span></a></li>
+        </ul>
+      </div>
 
-    <section class="category" data-category="Other Tools">
-      <h2 class="category-title">Other Tools</h2>
-      <ul class="link-list">
-        <li><a href="https://owu.terracat.net/" target="_blank" rel="noopener noreferrer">OWU</a></li>
-        <li><a href="https://zwwx.club" target="_blank" rel="noopener noreferrer">zwwx.club</a></li>
-        <li><a href="https://yutianfu.me" target="_blank" rel="noopener noreferrer">yutianfu.me</a></li>
-        <li><a href="https://zaiwu.org" target="_blank" rel="noopener noreferrer">zaiwu.org</a></li>
-        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li><a href="https://www.figma.com" target="_blank" rel="noopener noreferrer">Figma</a></li>
-      </ul>
+      <div class="category" data-category="Games">
+        <h2 class="category-title">Games</h2>
+        <ul class="tile-list">
+          <li class="tile"><a href="https://game.yutianfu.me/" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=game.yutianfu.me&sz=64" alt="" loading="lazy"/></span><span class="tile-name">game.yutianfu.me</span></a></li>
+          <li class="tile"><a href="https://ddz.yutianfu.me/" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=ddz.yutianfu.me&sz=64" alt="" loading="lazy"/></span><span class="tile-name">ddz.yutianfu.me</span></a></li>
+          <li class="tile"><a href="https://poki.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=poki.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Poki</span></a></li>
+          <li class="tile"><a href="https://www.roblox.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=roblox.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Roblox</span></a></li>
+          <li class="tile"><a href="https://play.geforcenow.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=play.geforcenow.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">GeForce NOW</span></a></li>
+        </ul>
+      </div>
+
+      <div class="category" data-category="Other Tools">
+        <h2 class="category-title">Other Tools</h2>
+        <ul class="tile-list">
+          <li class="tile"><a href="https://zwwx.club" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=zwwx.club&sz=64" alt="" loading="lazy"/></span><span class="tile-name">zwwx.club</span></a></li>
+          <li class="tile"><a href="https://yutianfu.me" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=yutianfu.me&sz=64" alt="" loading="lazy"/></span><span class="tile-name">yutianfu.me</span></a></li>
+          <li class="tile"><a href="https://zaiwu.org" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=zaiwu.org&sz=64" alt="" loading="lazy"/></span><span class="tile-name">zaiwu.org</span></a></li>
+          <li class="tile"><a href="https://github.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=github.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">GitHub</span></a></li>
+          <li class="tile"><a href="https://www.figma.com" target="_blank" rel="noopener noreferrer"><span class="tile-icon"><img src="https://www.google.com/s2/favicons?domain=figma.com&sz=64" alt="" loading="lazy"/></span><span class="tile-name">Figma</span></a></li>
+        </ul>
+      </div>
     </section>
   </main>
 
