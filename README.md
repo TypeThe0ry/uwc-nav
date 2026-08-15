@@ -1,9 +1,10 @@
 # UWC Nav
 
-A minimalist start page — the design language of [OWU](https://github.com/TypeThe0ry/OWU), zero build step.
+A clean, minimalist start page for UWCSEA students.
 
-- Tools, school, external and games quick links in one viewport
-- Light/dark themes with localStorage persistence (same "owu-theme" key as OWU)
-- Plain HTML/CSS/JS: copy the folder to any static host and go
+- 8 categories: AI Tools, AI Humanizer, School, Study & Reference, Search,
+  Social & Media, Games, Other Tools — 55+ shortcuts
+- Instant link filter (type to find a site), light/dark themes
+- Plain HTML/CSS/JS, zero build step; deployed at https://uwc.tools
 
-Deployed at https://uwc.tools
+Made By Team TerraCat

@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>UWC Nav</title>
-<meta name="description" content="A minimalist start page — tools, school, links and games."/>
+<meta name="description" content="A clean start page for UWCSEA students — AI, school, study, games and more."/>
 <link rel="stylesheet" href="styles.css"/>
 <script>
 try{const saved=localStorage.getItem("owu-theme");const theme=saved==="light"||saved==="dark"?saved:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=theme}catch{}
@@ -12,26 +12,15 @@ try{const saved=localStorage.getItem("owu-theme");const theme=saved==="light"||s
 <script src="app.js" defer></script>
 </head>
 <body>
-<main class="nav-shell">
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
-  <div class="ambient ambient-three" aria-hidden="true"></div>
-
+<div class="page">
   <header class="topbar">
-    <div class="wordmark" aria-label="UWC Nav">
-      <span class="wordmark-icon" aria-hidden="true"><i></i></span>
-      <span class="wordmark-copy">
-        <strong>UWC Nav</strong>
-        <small>Quick links</small>
-      </span>
-    </div>
-
+    <div class="brand">UWC Nav</div>
     <div class="topbar-actions">
+      <input id="filter" class="filter" type="search" placeholder="Find a site…" aria-label="Find a site" autocomplete="off"/>
       <a class="gh-link" href="https://github.com/TypeThe0ry/uwc-nav" target="_blank" rel="noopener noreferrer" aria-label="UWC Nav GitHub repository">
         <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true">
           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
         </svg>
-        <span>GitHub</span>
       </a>
       <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Toggle color theme">
         <span class="theme-track" aria-hidden="true">
@@ -40,53 +29,117 @@ try{const saved=localStorage.getItem("owu-theme");const theme=saved==="light"||s
             <span class="theme-icon-dark">☾</span>
           </span>
         </span>
-        <span class="theme-label" aria-hidden="true">
-          <span class="theme-label-light">Light</span>
-          <span class="theme-label-dark">Dark</span>
-        </span>
       </button>
     </div>
   </header>
 
-  <section class="categories" aria-label="Quick links">
-    <div class="category">
-      <h2 class="category-title"><span class="category-dot tools"></span>Tools</h2>
+  <main class="categories">
+    <section class="category" data-category="AI Tools">
+      <h2 class="category-title">AI Tools</h2>
       <ul class="link-list">
-        <li><a href="https://owu.terracat.net/" target="_blank" rel="noopener noreferrer">OWU <span class="link-hint">web proxy</span></a></li>
+        <li><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">ChatGPT</a></li>
+        <li><a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a></li>
+        <li><a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">Gemini</a></li>
+        <li><a href="https://perplexity.ai" target="_blank" rel="noopener noreferrer">Perplexity</a></li>
+        <li><a href="https://chat.deepseek.com" target="_blank" rel="noopener noreferrer">DeepSeek</a></li>
+        <li><a href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer">Copilot</a></li>
+        <li><a href="https://grok.com" target="_blank" rel="noopener noreferrer">Grok</a></li>
+        <li><a href="https://cursor.com" target="_blank" rel="noopener noreferrer">Cursor</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="category">
-      <h2 class="category-title"><span class="category-dot school"></span>School</h2>
+    <section class="category" data-category="AI Humanizer">
+      <h2 class="category-title">AI Humanizer</h2>
       <ul class="link-list">
-        <li><a href="https://www.uwcsea.edu.sg/community-portal" target="_blank" rel="noopener noreferrer">Community Portal <span class="link-hint">UWCSEA</span></a></li>
-        <li><a href="https://classroom.google.com" target="_blank" rel="noopener noreferrer">Google Classroom <span class="link-hint">classes</span></a></li>
-        <li><a href="https://mail.google.com" target="_blank" rel="noopener noreferrer">Gmail <span class="link-hint">mail</span></a></li>
+        <li><a href="https://undetectable.ai" target="_blank" rel="noopener noreferrer">Undetectable AI</a></li>
+        <li><a href="https://writehuman.ai" target="_blank" rel="noopener noreferrer">WriteHuman</a></li>
+        <li><a href="https://stealthgpt.ai" target="_blank" rel="noopener noreferrer">StealthGPT</a></li>
+        <li><a href="https://humanizeai.pro" target="_blank" rel="noopener noreferrer">Humanize AI</a></li>
+        <li><a href="https://netus.ai" target="_blank" rel="noopener noreferrer">Netus AI</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="category">
-      <h2 class="category-title"><span class="category-dot external"></span>External</h2>
+    <section class="category" data-category="School">
+      <h2 class="category-title">School</h2>
       <ul class="link-list">
-        <li><a href="https://zwwx.club" target="_blank" rel="noopener noreferrer">zwwx.club <span class="link-hint">community</span></a></li>
-        <li><a href="https://yutianfu.me" target="_blank" rel="noopener noreferrer">yutianfu.me <span class="link-hint">profile</span></a></li>
-        <li><a href="https://zaiwu.org" target="_blank" rel="noopener noreferrer">zaiwu.org <span class="link-hint">site</span></a></li>
+        <li><a href="https://www.uwcsea.edu.sg/community-portal" target="_blank" rel="noopener noreferrer">Community Portal</a></li>
+        <li><a href="https://classroom.google.com" target="_blank" rel="noopener noreferrer">Google Classroom</a></li>
+        <li><a href="https://mail.google.com" target="_blank" rel="noopener noreferrer">Gmail</a></li>
+        <li><a href="https://drive.google.com" target="_blank" rel="noopener noreferrer">Google Drive</a></li>
+        <li><a href="https://calendar.google.com" target="_blank" rel="noopener noreferrer">Google Calendar</a></li>
+        <li><a href="https://docs.google.com" target="_blank" rel="noopener noreferrer">Google Docs</a></li>
+        <li><a href="https://managebac.com" target="_blank" rel="noopener noreferrer">ManageBac</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="category">
-      <h2 class="category-title"><span class="category-dot games"></span>Games</h2>
+    <section class="category" data-category="Study & Reference">
+      <h2 class="category-title">Study &amp; Reference</h2>
       <ul class="link-list">
-        <li><a href="https://game.yutianfu.me/" target="_blank" rel="noopener noreferrer">game.yutianfu.me <span class="link-hint">arcade</span></a></li>
-        <li><a href="https://ddz.yutianfu.me/" target="_blank" rel="noopener noreferrer">ddz.yutianfu.me <span class="link-hint">doudizhu</span></a></li>
+        <li><a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+        <li><a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+        <li><a href="https://www.khanacademy.org" target="_blank" rel="noopener noreferrer">Khan Academy</a></li>
+        <li><a href="https://quizlet.com" target="_blank" rel="noopener noreferrer">Quizlet</a></li>
+        <li><a href="https://www.grammarly.com" target="_blank" rel="noopener noreferrer">Grammarly</a></li>
+        <li><a href="https://www.deepl.com" target="_blank" rel="noopener noreferrer">DeepL</a></li>
+        <li><a href="https://www.wolframalpha.com" target="_blank" rel="noopener noreferrer">WolframAlpha</a></li>
+        <li><a href="https://www.desmos.com" target="_blank" rel="noopener noreferrer">Desmos</a></li>
+        <li><a href="https://www.notion.so" target="_blank" rel="noopener noreferrer">Notion</a></li>
+        <li><a href="https://www.canva.com" target="_blank" rel="noopener noreferrer">Canva</a></li>
       </ul>
-    </div>
-  </section>
+    </section>
+
+    <section class="category" data-category="Search">
+      <h2 class="category-title">Search</h2>
+      <ul class="link-list">
+        <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
+        <li><a href="https://duckduckgo.com" target="_blank" rel="noopener noreferrer">DuckDuckGo</a></li>
+        <li><a href="https://www.bing.com" target="_blank" rel="noopener noreferrer">Bing</a></li>
+        <li><a href="https://yandex.com" target="_blank" rel="noopener noreferrer">Yandex</a></li>
+        <li><a href="https://search.brave.com" target="_blank" rel="noopener noreferrer">Brave</a></li>
+      </ul>
+    </section>
+
+    <section class="category" data-category="Social & Media">
+      <h2 class="category-title">Social &amp; Media</h2>
+      <ul class="link-list">
+        <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+        <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+        <li><a href="https://discord.com" target="_blank" rel="noopener noreferrer">Discord</a></li>
+        <li><a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer">Reddit</a></li>
+        <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a></li>
+        <li><a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+      </ul>
+    </section>
+
+    <section class="category" data-category="Games">
+      <h2 class="category-title">Games</h2>
+      <ul class="link-list">
+        <li><a href="https://game.yutianfu.me/" target="_blank" rel="noopener noreferrer">game.yutianfu.me</a></li>
+        <li><a href="https://ddz.yutianfu.me/" target="_blank" rel="noopener noreferrer">ddz.yutianfu.me</a></li>
+        <li><a href="https://poki.com" target="_blank" rel="noopener noreferrer">Poki</a></li>
+        <li><a href="https://www.roblox.com" target="_blank" rel="noopener noreferrer">Roblox</a></li>
+        <li><a href="https://play.geforcenow.com" target="_blank" rel="noopener noreferrer">GeForce NOW</a></li>
+      </ul>
+    </section>
+
+    <section class="category" data-category="Other Tools">
+      <h2 class="category-title">Other Tools</h2>
+      <ul class="link-list">
+        <li><a href="https://owu.terracat.net/" target="_blank" rel="noopener noreferrer">OWU</a></li>
+        <li><a href="https://zwwx.club" target="_blank" rel="noopener noreferrer">zwwx.club</a></li>
+        <li><a href="https://yutianfu.me" target="_blank" rel="noopener noreferrer">yutianfu.me</a></li>
+        <li><a href="https://zaiwu.org" target="_blank" rel="noopener noreferrer">zaiwu.org</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.figma.com" target="_blank" rel="noopener noreferrer">Figma</a></li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
     <span>UWC Nav</span>
-    <span>Simple by design.</span>
+    <span>Made By Team TerraCat</span>
   </footer>
-</main>
+</div>
 </body>
 </html>
