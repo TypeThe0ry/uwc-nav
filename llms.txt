@@ -1,6 +1,17 @@
 # UWC Nav
 
-> UWC Nav is a clean, minimalist start page for UWCSEA students. It collects shortcuts to AI tools, AI humanizers, school portals, study and reference resources, search engines, social media, and games. Social and game links (except the two yutianfu.me sites) open through the OWU proxy at https://owu.terracat.net/ to work around the school firewall.
+> UWC Nav is a fast, searchable start page for UWCSEA students. It brings together shortcuts to AI tools, AI humanizers, school portals, study and reference resources, search engines, social media, and games in one static page.
+
+## Site facts
+- Canonical URL: https://uwc.tools/
+- Site type: searchable student start page / navigation hub
+- Primary audience: UWCSEA students
+- Maintainer: Team TerraCat
+- Source repository: https://github.com/TypeThe0ry/uwc-nav
+- Featured service: OWU Website Unblocker at https://owu.terracat.net/
+- Machine-readable index: https://uwc.tools/sitemap.xml
+
+Links marked as OWU open through the OWU proxy. Direct links remain direct when the destination is intentionally public or does not need proxy routing.
 
 ## Categories
 

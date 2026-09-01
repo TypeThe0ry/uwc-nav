@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
 
+# The page is public reference content. Keep the machine-readable summary
+# discoverable without exposing non-public paths.
+Content-Signal: search=yes, ai-input=yes, ai-train=no, use=reference
+
 # Generative engines and AI assistants (GEO)
 User-agent: GPTBot
 Allow: /
