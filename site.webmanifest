@@ -1,0 +1,19 @@
+{
+  "name": "UWC Nav — UWCSEA Student Start Page",
+  "short_name": "UWC Nav",
+  "description": "A fast, searchable start page for UWCSEA students.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#eef2fc",
+  "theme_color": "#f5f7fb",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

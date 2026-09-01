@@ -12,20 +12,30 @@
   }
 
   const filter = document.getElementById("filter");
+  const filterStatus = document.getElementById("filter-status");
   if (filter) {
     filter.addEventListener("input", function () {
       const query = filter.value.trim().toLowerCase();
       const categories = document.querySelectorAll(".category");
+      let visibleTotal = 0;
       categories.forEach(function (category) {
         let visible = 0;
         const tiles = category.querySelectorAll(".tile");
         tiles.forEach(function (tile) {
           const match = !query || tile.textContent.toLowerCase().includes(query);
           tile.classList.toggle("hidden", !match);
-          if (match) visible++;
+          if (match) {
+            visible++;
+            visibleTotal++;
+          }
         });
         category.classList.toggle("hidden", visible === 0);
       });
+      if (filterStatus) {
+        filterStatus.textContent = query
+          ? `${visibleTotal} shortcut${visibleTotal === 1 ? "" : "s"} found`
+          : "Showing all shortcuts";
+      }
     });
   }
 
