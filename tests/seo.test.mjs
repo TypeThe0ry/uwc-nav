@@ -11,7 +11,7 @@ test("homepage exposes a focused SEO head and one primary heading", async () => 
   assert.match(html, /<meta name="description" content="[^"]+"\/>/);
   assert.match(html, /<link rel="canonical" href="https:\/\/uwc\.tools\/"\/>/);
   assert.match(html, /<link rel="icon" href="favicon\.svg" type="image\/svg\+xml"\/>/);
-  assert.match(html, /<link rel="manifest" href="site\.webmanifest"\/>/);
+  assert.match(html, /<link rel="manifest" href="manifest\.json"\/>/);
   assert.match(html, /<link rel="alternate" type="text\/plain" title="LLM-friendly site summary" href="\/llms\.txt"\/>/);
   assert.match(html, /<meta name="twitter:card" content="summary_large_image"\/>/);
   assert.equal((html.match(/<h1\b/g) ?? []).length, 1);
@@ -51,7 +51,7 @@ test("crawler and GEO discovery files remain coherent", async () => {
   assert.match(llms, /Canonical URL: https:\/\/uwc\.tools\//);
   assert.match(llms, /Source repository: https:\/\/github\.com\/TypeThe0ry\/uwc-nav/);
   assert.match(llms, /Featured service: OWU Website Unblocker/);
-  const manifest = JSON.parse(await read("site.webmanifest"));
+  const manifest = JSON.parse(await read("manifest.json"));
   assert.equal(manifest.start_url, "/");
   assert.equal(manifest.icons[0].src, "/favicon.svg");
 });
